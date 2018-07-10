@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="dise.css">
+</head>
+<body background="fondo login.jpg" style="text-align:center">
+	<header>
+		<h2><em>Registro</em></h2>
+	</header>
+	<section id="cuad_seccion">
+		<form action="registro.php" method="POST">
+			<label for="dni" style="color:#FF0000">DNI<span><em>(requerido)</em></span></label>
+			<br>
+			<input type="text" name="dni" required/>
+			<br>
+			<label for="nombre" style="color:#FF0000">Nombre de Usuario<span><em>(requerido)</em></span></label>
+			<br>
+			<input type="text" name="nombre" required/>
+			<br>
+			<label for="apellidos" style="color:#FF0000">APELLIDOS/NOMBRES<span><em>(requerido)</em></span></label>
+			<br>
+			<input type="text" name="apellidos" required/>
+			<br>
+			<label for="fech_naci" style="color:#FF0000">Fecha Naciiento<span><em>(requerido)</em></span></label>
+			<br>
+			<input type="text" name="fech_naci" required/>
+			<br><br>
+			<input name="submit" type="submit" value="Suscribirse"/>
+		</form>
+		<br>
+		<input onClick="window.location.href='inscritos.php'" name="submit" type="button" value="Inscritos"/>
+	</section>
+</body>
+</html>
